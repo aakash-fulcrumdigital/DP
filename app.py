@@ -8,7 +8,7 @@ import os
 if not os.path.exists('model.pkl'):
     gdown.download('https://drive.google.com/uc?id=18bXgJn2BJdlgTYEVAprIXxTl-GB1Gq5i', 'model.pkl', quiet=False)
 
-pipe = pickle.load(open('pipe.pkl','rb'))
+pipe = pickle.load(open('model.pkl','rb'))
 df = pickle.load(open('df.pkl','rb'))
 
 st.title("Dynamic Price Prediction for Flights")
